@@ -6,7 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "kingsman12.aternos",
+    "ip": "kingsman12.aternos.me",
     "port": 55292,
     "version": "1.20.1",
     "try-creative": false
