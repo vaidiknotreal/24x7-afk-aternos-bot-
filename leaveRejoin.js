@@ -48,12 +48,12 @@ function setupLeaveRejoin(bot, createBot) {
         if (stopped) return
 
         // FAST RECONNECT: 2s -> 10s (User requested faster)
-        let delay = randomMs(2000, 10000)
+        let delay = randomMs(1500, 9500)
 
         // Slight backoff for repeated failures, but keep it snappy
         reconnectAttempts++
         if (reconnectAttempts > 3) {
-            delay += 5000 // Add 5s if it's failing a lot
+            delay += 4000 // Add 5s if it's failing a lot
         }
 
         // Cap at 30s max
